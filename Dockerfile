@@ -41,7 +41,7 @@ COPY --from=python-reqs /usr/local/lib/python3.11/site-packages /usr/local/lib/p
 ENV XDG_CONFIG_HOME=/config
 ENV US_CONFIG=/config/config.yml
 ENV US_LOGS=/config/logs
-ENV TZ=America/Los_Angeles
+ENV TZ=America/New_York
 
 # Delete unnecessary setup files
 RUN set -eux; \
