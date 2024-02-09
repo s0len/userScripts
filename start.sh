@@ -14,12 +14,12 @@ groupmod -o -g "$PGID" dockeruser
 usermod -o -u "$PUID" dockeruser
 
 # Copy contents of /app/config to /config
-cp -Rn /app/config/* /config
+#cp -Rn /app/config/* /config
 
 # Change permissions of the /config directory to 777
-chmod -R 777 /config
+#chmod -R 777 /config
 
-chown -R dockeruser:dockeruser /app /config /data
+chown -R dockeruser:dockeruser /app /config
 
 # Run the command as the dockeruser
 exec runuser -u dockeruser -g dockeruser -- "$@"
