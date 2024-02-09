@@ -26,10 +26,10 @@ RUN apt-get update; \
 FROM python:3.11-slim
 
 # Metadata and labels
-LABEL maintainer="Solen" \
+LABEL maintainer="Drazzilb" \
       description="userScripts" \
-      org.opencontainers.image.source="https://github.com/s0len/userScripts" \
-      org.opencontainers.image.authors="Solen" \
+      org.opencontainers.image.source="https://github.com/Drazzilb08/userScripts" \
+      org.opencontainers.image.authors="Drazzilb" \
       org.opencontainers.image.title="userScripts"
 
 # Set working directory and copy Python packages from the python-reqs stage
